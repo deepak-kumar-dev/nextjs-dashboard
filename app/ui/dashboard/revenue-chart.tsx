@@ -32,7 +32,7 @@ export default async function RevenueChart() {
       <div className="rounded-xl bg-gray-50 p-4">
         <div className="mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-white p-4 sm:grid-cols-13 md:gap-4">
           <div
-            className="mb-6 hidden flex-col justify-between text-sm text-gray-400 sm:flex"
+            className="mb-6 hidden flex-col justify-between text-sm text-black-400 sm:flex"
             style={{ height: `${chartHeight}px` }}
           >
             {yAxisLabels.map((label) => (
@@ -48,7 +48,7 @@ export default async function RevenueChart() {
                   height: `${(chartHeight / topLabel) * month.revenue}px`,
                 }}
               ></div>
-              <p className="-rotate-90 text-sm text-gray-400 sm:rotate-0">
+              <p className="-rotate-90 text-sm text-black-400 sm:rotate-0">
                 {month.month}
               </p>
             </div>
